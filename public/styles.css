@@ -1,0 +1,175 @@
+.general {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.csv-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 30px;
+  min-height: 400px;
+}
+
+h3 {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+.but {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.but button {
+  background: cornflowerblue;
+  width: 120px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+
+}
+
+.but button:hover {
+  font-weight: bold;
+  background: lightblue;
+  cursor: pointer;
+  color: dimgray;
+}
+
+#csv-result {
+  display: none;
+  width: 70%;
+  height: auto;
+  margin: 20px 0 30px 0;
+  border-radius: 10px;
+  background: lightblue;
+  word-wrap: break-word;
+  padding: 20px;
+  box-shadow: lightgray 0 4px;
+
+}
+
+input value {
+  word-wrap: break-word;
+}
+
+nav {
+  width: 90%;
+  height: 70px;
+  background: blue;
+  color: white;
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin:  30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: cornflowerblue;
+  font-weight: bold;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+h3 {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+table {
+  border-radius: 10px;
+  background: lightblue;
+  box-shadow: lightgray 0 4px;
+  word-wrap: break-word;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+th {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 2px dimgray;
+
+}
+
+td {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 30px;
+}
+
+.welcome p {
+  text-align: justify;
+}
+
+.footer {
+  background: cornflowerblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  width: 90%;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#ln-img {
+  width: 40px;
+  height: 40px;
+}
+
+#reb-img {
+  height: 40px;
+  width: auto;
+}

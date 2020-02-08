@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Rebellion test</title>
+</head>
+<body>
+  <div class="general">
+  <%- include ('partials/nav') -%>
+  <div class="csv-file">
+    <h3>Get the repository info in csv format</h3>
+    <div class="but">
+      <p> Click the button in order to get your csv info ===></p>
+      <button id="csv-but" onclick="document.getElementById('csv-result').style.display = 'flex'">Click me!</button>
+    </div>
+
+    <p id="csv-result"><%=csv%></p>
+
+  </div>
+  <%- include ('partials/footer') -%>
+  </div>
+
+</body>
+</html>

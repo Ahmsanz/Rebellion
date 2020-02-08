@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/styles.css">
+  <title>Rebellion test</title>
+</head>
+<body>
+  <div class="general">
+  <%- include ('partials/nav') -%>
+  <div class="statistics">
+    <h3>Cloudinary repository stats</h3>
+  <table id="stats">
+    <tr>
+      <th> Total images </th>
+      <th> jpg Files </th>
+      <th> png Files</th>
+      <th> svg Files </th>
+      <th> Biggest file </th>
+      <th> Smallest file </th>
+      <th> Average file size </th>
+    </tr>
+
+    <tr>
+      <td><%=stats.totalImages %></td>
+      <td><%=stats.formats.jpg %></td>
+      <td><%=stats.formats.png %></td>
+      <td><%=stats.formats.svg %></td>
+      <td><%=stats.biggestPicture %></td>
+      <td><%=stats.smallestPicture %></td>
+      <td><%=stats.avgSize %> bytes</td>
+    </tr>
+  </table>
+
+  </div>
+  <%- include ('partials/footer') -%>
+</div>
+
+</body>
+</html>
