@@ -79,7 +79,7 @@ cloudinary.api.resources(
   //route to csv info page
   app.get('/cloudinary/csv', function (req, res) {
 
-    res.render('csv', {csv: csv, trigger: trigger})
+    res.render('csv', {csv: csv})
   });
 
   return stats;
