@@ -88,14 +88,14 @@ cloudinary.api.resources(
 
 
 
-//FUNCTIONS TO GET THE REQUESTED information
+//FUNCTIONS TO GET THE REQUESTED INFORMATION
 
 //function to convert the repository information into .csv format
 
   function csvConverter(args) {
-  var result, ctr, keys, columnDelimiter, lineDelimiter;
+  let result, ctr, keys, columnDelimiter, lineDelimiter;
 
-
+//declare delimiters
   columnDelimiter = ',';
   lineDelimiter = '\n';
 
