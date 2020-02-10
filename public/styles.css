@@ -55,7 +55,7 @@ h3 {
 
 #csv-result {
   display: none;
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: 20px 0 30px 0;
   border-radius: 10px;
@@ -63,6 +63,8 @@ h3 {
   word-wrap: break-word;
   padding: 20px;
   box-shadow: lightgray 0 4px;
+  max-height: 500px;
+  overflow-y: scroll;
 
 }
 

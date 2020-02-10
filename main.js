@@ -38,9 +38,8 @@ cloudinary.config({
 });
 
 
-
 //getting resources from cloudinary repository
-cloudinary.api.resources(
+cloudinary.api.resources( { type: "upload", max_results: 500 },
   (err, res) => {
 
 //storing response in assets variable
@@ -61,20 +60,20 @@ cloudinary.api.resources(
     }
 
 //printing statistics object
-     console.log(stats);
+      console.log(stats);
 
 //route to statistics page
      app.get('/cloudinary/statistics', function(req, res){
          res.render('statistics', {stats: stats});
      });
 
-    console.log(assets);
+     console.log(assets);
 
     //csv conversion
 
     let csv = csvConverter(assets);
 
-    console.log(csv);
+     console.log(csv);
 
   //route to csv info page
   app.get('/cloudinary/csv', function (req, res) {
